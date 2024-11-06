@@ -13,8 +13,9 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins("http://localhost:3000/");
+                registry.addMapping("/usuarios").allowedOrigins("http://localhost:3000/");
             }
         };
+
     }
 }

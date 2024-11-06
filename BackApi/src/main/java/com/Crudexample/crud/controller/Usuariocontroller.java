@@ -15,12 +15,9 @@ import java.util.List;
 @RequestMapping("/usuarios")
 public class Usuariocontroller {
 
-
     private final UsuarioService usuarioService;
-
     @Autowired
     private UsuarioRepository usuarioRepository;
-
 
     @GetMapping
     public ResponseEntity<List<Usuario>> getAllUsuarios() {
