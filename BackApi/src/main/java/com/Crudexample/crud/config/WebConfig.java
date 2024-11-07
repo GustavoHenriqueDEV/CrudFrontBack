@@ -16,6 +16,5 @@ public class WebConfig {
                 registry.addMapping("/usuarios").allowedOrigins("http://localhost:3000/");
             }
         };
-
     }
 }
