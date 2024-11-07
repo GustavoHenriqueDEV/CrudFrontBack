@@ -25,6 +25,7 @@ public class UsuarioService {
     public Usuario create(Usuario usuario){
         return usuarioRepository.save(usuario);
     }
+
     public Usuario update(int id, Usuario usuarioDetails){
         return usuarioRepository.findById(id).map(usuario -> {
             // Atualiza os campos do usuário existente com os novos detalhes
@@ -50,6 +51,9 @@ public class UsuarioService {
         return usuarioRepository.findAll();
     }
 }
+
+
+
 
 //verificar se o id existe no banco de dados antes de fazer a exclusao;
 //criar variavle com o id do ususario
